@@ -1,0 +1,56 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="dashboard.css" rel="stylesheet" type="text/css">  
+    <title>Dashboard - UNILIA WRITERS FORUM</title>  
+</head>  
+<body>  
+    <header>  
+        <h1>Welcome to UNILIA WRITERS FORUM!</h1>  
+        <p>Your creative journey starts here.</p>  
+    </header>  
+    
+    <nav>  
+        <ul>  
+            <li><a href="profile.html">My Profile</a></li>  
+            <li><a href="resources.html">Writing Resources</a></li>  
+            <li><a href="community.html">Community Forum</a></li>  
+            <li><a href="logout.php">Log Out</a></li>  
+        </ul>  
+    </nav>  
+
+    <main>  
+        <section id="welcome">  
+            <h2>Dashboard Overview</h2>  
+            <p>Hello, <strong><?php session_start(); echo $_SESSION['user']; ?></strong>! Here’s what’s happening in the forum:</p>  
+        </section>  
+
+        <section id="announcements">  
+            <h2>Latest Announcements</h2>  
+            <ul>  
+                <li>Join our upcoming writing workshop! Sign up <a href="workshop.html">here</a>.</li>  
+                <li>Check out the latest articles on creative writing in our <a href="resources.html">resources</a> section.</li>  
+                <li>New community challenges available! Participate and showcase your talent!</li>  
+            </ul>  
+        </section>  
+
+        <section id="resources-preview">  
+            <h2>Writing Resources</h2>  
+            <p>Explore tips, tutorials, and articles to enhance your writing skills.</p>  
+            <ul>  
+                <li><a href="resource1.html">How to Overcome Writer's Block</a></li>  
+                <li><a href="resource2.html">10 Tips for Creative Writing</a></li>  
+                <li><a href="resource3.html">Understanding Character Development</a></li>  
+            </ul>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2023 UNILIA WRITERS FORUM. All rights reserved.</p>  
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>  
+    </footer>  
+    
+</body>  
+</html>
