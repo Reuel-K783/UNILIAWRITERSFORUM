@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="admin.css" rel="stylesheet">
+    <title>Admin Dashboard - UNILIA WRITERS FORUM</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard - UNILIA WRITERS FORUM</h1>
+        <p>Manage users, content, and site settings.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="manage_users.php">Manage Users</a></li>
+            <li><a href="manage_content.php">Manage Content</a></li>
+            <li><a href="site_settings.php">Site Settings</a></li>
+            <li><a href="profile.html">My Profile</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="admin-overview">
+            <h2>Admin Dashboard Overview</h2>
+            <p>Hello, <strong><?php session_start(); echo $_SESSION['admin_user']; ?></strong>! Here's a quick overview of the site’s activity and your admin options:</p>
+        </section>
+
+        <section id="user-management">
+            <h2>Manage Users</h2>
+            <ul>
+                <li><a href="add_user.php">Add New User</a></li>
+                <li><a href="edit_user.php">Edit User</a></li>
+                <li><a href="delete_user.php">Delete User</a></li>
+                <li><a href="view_users.php">View All Users</a></li>
+            </ul>
+        </section>
+
+        <section id="content-management">
+            <h2>Manage Content</h2>
+            <ul>
+                <li><a href="add_content.php">Add New Content</a></li>
+                <li><a href="edit_content.php">Edit Content</a></li>
+                <li><a href="delete_content.php">Delete Content</a></li>
+                <li><a href="view_content.php">View All Content</a></li>
+                <li><a href="approve.php">Approve To view</a></li>
+            </ul>
+        </section>
+
+        <section id="site-settings">
+            <h2>Site Settings</h2>
+            <p>Configure various settings for the site:</p>
+            <ul>
+                <li><a href="general_settings.php">General Settings</a></li>
+                <li><a href="privacy_settings.php">Privacy Settings</a></li>
+                <li><a href="notification_settings.php">Notification Settings</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 UNILIA WRITERS FORUM. All rights reserved.</p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

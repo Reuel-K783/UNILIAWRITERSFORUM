@@ -1,0 +1,117 @@
+body {  
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;  
+    background-color: #FAF3E0; /* Light beige background for a warm feel */  
+    color: #333; /* Dark gray for text */  
+}  
+header {  
+    background-color: #8B5B29; /* A warm brown color */  
+    color: #FFF;  
+    text-align: center;  
+    padding: 20px 0;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+} 
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.featured-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.book-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin to prevent overlap with the footer */
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+nav {  
+    display: flex;  
+    justify-content: center;  
+    background-color: #DAA520; /* Goldenrod color for the navbar */  
+    padding: 10px 0;  
+}  
+nav a {  
+    color: #FFF;  
+    padding: 14px 20px;  
+    text-decoration: none;  
+    margin: 0 10px;  
+    border-radius: 5px;  
+    transition: background 0.3s;  
+}  
+nav a:hover {  
+    background-color: #8B5B29; /* Darker brown on hover */  
+}  
+.container {  
+    max-width: 900px;  
+    margin: auto;  
+    padding: 20px;  
+    text-align: center;  
+}  
+h2 {  
+    margin-top: 0;  
+    color: #5C3A29; /* A darker font for headings */  
+}  
+footer {  
+    background-color: #8B5B29;  
+    color: #FFF;  
+    text-align: center;  
+    padding: 20px 0;  
+    position: relative; /* Change from fixed to relative */  
+    width: 100%;  
+    margin-top: 20px; /* Add margin to ensure spacing between content and footer */
+}  
+footer a {  
+    color: #FFF;  
+    text-decoration: underline;  
+}  
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+ul li::before {
+    content: ""; /* Custom bullet */
+    color: #8B5B29; /* Bullet color */
+    display: inline-block; 
+    width: 1em; /* Space for the bullet */
+    margin-left: -1em; /* Adjust the positioning */
+}
+@media (max-width: 600px) {  
+    nav {  
+        flex-direction: column;  
+    }  
+} 

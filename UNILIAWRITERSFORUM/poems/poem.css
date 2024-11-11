@@ -1,0 +1,86 @@
+body {  
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;  
+    background-color: #FAF3E0; /* Light beige background */  
+    color: #333; /* Dark gray for text */  
+}  
+header {  
+    background-color: #8B5B29; /* Warm brown color */  
+    color: #FFF;  
+    text-align: center;  
+    padding: 20px 0;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+
+h2 {  
+    text-align: center;  
+    color: #5C3A29; /* Darker font for headings */  
+}  
+
+
+nav {  
+    background: #333;  
+    color: #fff;  
+    text-align: center;
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 5px 10px;  
+}  
+
+nav ul li a:hover {  
+    background: #5d4d93;  
+    border-radius: 5px;  
+}  
+
+
+footer {  
+    background-color: #8B5B29;  
+    color: #FFF;  
+    text-align: center;  
+    padding: 20px 0;  
+    position: relative;  
+    bottom: 0;  
+    width: 100%;  
+}  
+footer a {  
+    color: #FFF;  
+    text-decoration: underline;  
+}  
+
+
+
+
+
+
+
+
+
+
+.poem-card {  
+    border: 1px solid #ccc;  
+    border-radius: 8px; /* Match with your form styling */  
+    padding: 20px;  
+    margin: 15px 0; /* Separate the cards */  
+    background-color: #FAF3E0; /* Consistent light beige background */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */  
+}  
+
+.poem-grid {  
+    display: flex;  
+    flex-wrap: wrap;  
+    gap: 20px; /* Space between the poems */  
+}

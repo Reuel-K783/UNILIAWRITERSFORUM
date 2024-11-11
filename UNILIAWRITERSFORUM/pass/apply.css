@@ -1,0 +1,110 @@
+/* General Body Styles */  
+body {  
+    font-family: 'Montserrat', sans-serif;  
+    margin: 0;  
+    background-color: #FAF3E0; /* Light beige background */  
+    color: #333; /* Dark gray for text */  
+}  
+
+/* Header Styles */  
+header {  
+    background-color: #8B5B29; /* Warm brown color */  
+    color: #FFF;  
+    text-align: center;  
+    padding: 20px 0;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}  
+
+/* Container for the Form */  
+.container {  
+    max-width: 600px; /* Maximum width for the form */  
+    margin: auto; /* Center the container */  
+    padding: 40px; /* Padding around the content */  
+    background-color: #FFF; /* White background for form */  
+    border-radius: 8px; /* Rounded corners */  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */  
+}  
+
+/* Heading Styles */  
+h2 {  
+    text-align: center; /* Center text alignment */  
+    color: #5C3A29; /* Darker font for headings */  
+}  
+
+/* Form Styles */  
+form {  
+    display: flex; /* Use flexbox for layout */  
+    flex-direction: column; /* Stack elements vertically */  
+}  
+
+/* Input and Textarea Styles */  
+input[type="text"],  
+input[type="email"],  
+input[type="date"],  
+select,  
+textarea {  
+    padding: 10px; /* Padding inside input fields */  
+    margin: 10px 0; /* Spacing between input fields */  
+    border: 1px solid #ccc; /* Light gray border */  
+    border-radius: 4px; /* Rounded corners for inputs */  
+}  
+
+/* Submit Button Styles */  
+input[type="submit"] {  
+    background-color: #DAA520; /* Goldenrod color for button */  
+    color: #FFF; /* White text on button */  
+    border: none; /* No border for the button */  
+    padding: 10px; /* Padding inside button */  
+    border-radius: 5px; /* Rounded corners */  
+    cursor: pointer; /* Pointer cursor on hover */  
+    transition: background 0.3s; /* Smooth transition for background */  
+}  
+
+/* Submit Button Hover Effect */  
+input[type="submit"]:hover {  
+    background-color: #8B5B29; /* Darker brown on hover */  
+}  
+
+nav {  
+    background: #333;  
+    color: #fff;  
+    text-align: center;
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+}  
+
+nav ul li {  
+    display: inline;  
+    margin: 0 15px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+    padding: 5px 10px;  
+}  
+
+nav ul li a:hover {  
+    background: #5d4d93;  
+    border-radius: 5px;  
+}  
+
+/* Footer Styles */  
+footer {  
+    background-color: #8B5B29; /* Matches header */  
+    color: #FFF; /* White text for footer */  
+    text-align: center; /* Center text alignment */  
+    padding: 20px 0; /* Padding around footer */  
+    position: relative; /* Position relative for footer */  
+    bottom: 0; /* Stick to the bottom */  
+    width: 100%; /* Full width footer */  
+}  
+
+/* Footer Link Styles */  
+footer a {  
+    color: #FFF; /* White link color */  
+    text-decoration: underline; /* Underlined links */  
+}
