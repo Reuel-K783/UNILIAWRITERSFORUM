@@ -1,0 +1,91 @@
+
+/* Add these responsive styles */
+@media (max-width: 768px) {
+  /* General mobile adjustments */
+  .card {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  /* Form elements mobile optimization */
+  input, select, textarea, button {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Timetable specific fixes */
+  #activity-list li {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+
+  .activity-time {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  /* Graph container adjustments */
+  .graphs-card {
+    flex-direction: column;
+  }
+
+  .graphs-card .data-container {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+
+  /* Daily schedule adjustments */
+  #task-list li {
+    word-break: break-word;
+    padding: 8px 0;
+  }
+
+  /* Clothing arrangement fixes */
+  #clothing-list li {
+    font-size: 0.9em;
+  }
+
+  /* Form container spacing */
+  .form-container {
+    padding: 10px;
+  }
+}
+
+/* Add these graph-specific styles */
+.graphs-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.graphs-card .data-container {
+  width: 48%;
+  min-width: 300px;
+  margin: 1%;
+}
+
+/* Timetable specific improvements */
+#activity-list {
+  padding: 0;
+}
+
+#activity-list li {
+  background: #f8f9fa;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-time {
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Ensure charts are responsive */
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
